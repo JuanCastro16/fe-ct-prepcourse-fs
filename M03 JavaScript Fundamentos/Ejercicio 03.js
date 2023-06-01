@@ -6,21 +6,17 @@ function sonIguales(x, y) {
    // De lo contrario, retorna false.
    // Tu código:
    if (x === y){
-      return "True";
+      return true;
    } else {
-      return "false";
+      return false;
    }
-};
+}
 
 function tienenMismaLongitud(str1, str2) {
    // Retorna true si los dos strings tienen la misma longitud.
    // De lo contrario, retorna false.
    // Tu código:
-   if (str1 == str2){
-      return "True";
-   } else {
-      return "false"
-   }
+  return str1.length === str2.length;
 }
 
 function menosQueNoventa(num) {
@@ -28,9 +24,9 @@ function menosQueNoventa(num) {
    // De lo contrario, retorna false.
    // Tu código:
    if (num < 90){
-      return "True";
+      return true;
    } else {
-      return "false"
+      return false;
    }
 }
 
@@ -39,9 +35,9 @@ function mayorQueCincuenta(num) {
    // De lo contrario, retorna false.
    // Tu código:
    if(num > 50){
-      return "True";
+      return true;
    } else {
-      return "false"
+      return false;
    }
 }
 
@@ -49,10 +45,10 @@ function esPar(num) {
    // Retorna true si "num" es par.
    // De lo contrario, retorna false.
    // Tu código:
-   if (num % 2 == 0){
-      return "True";
+   if (num % 2 === 0){
+      return true;
    } else {
-      return "false"
+      return false;
    }
 }
 
@@ -60,10 +56,10 @@ function esImpar(num) {
    // Retorna true si "num" es impar.
    // De lo contrario, retorna false.
    // Tu código:
-   if (num % 2 == 0){
-      return "false"
+   if (num % 2 === 0){
+      return false
    } else {
-      return "True";
+      return true;
    }
 }
 

@@ -9,11 +9,11 @@ function esPositivo(num) {
    // Si el número es 0, devuelve false.
    // Tu código:
    if (num > 0) {
-      return "Es pisitivo";
+      return "Es positivo";
    } else if (num < 0) {
       return "Es negativo";
-   } else {
-      return "false";
+   } else if (num === 0); {
+      return false;
    }
 }
 
@@ -31,18 +31,18 @@ function combinarNombres(nombre, apellido) {
    return nombre + " " + apellido
 }
 
-function obtenerSaludo(nombre, cadena) {
+function obtenerSaludo(nombre) {
    // Toma el string "nombre" y concatena otra string en la cadena para que tome la siguiente forma:
    // Ejemplo: "Martin" ---> "Hola Martin!"
    // Tu código:
-   return (nombre + cadena)
+   return "Hola " + nombre + '!';
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
    // Retornar el área de un rectángulo teniendo su altura y ancho.
    // Tu código:
    area = ancho * alto
-   return area
+   return area;
 }
 
 function retornarPerimetro(lado) {
@@ -73,14 +73,20 @@ function esVocal(letra) {
    // Si el usuario ingresa un string de más de un caracter debes retornar el mensaje: "Dato incorrecto".
    // Si no es vocal, tambien debe retornar "Dato incorrecto".
    // Tu código:
-   if (letra != 1) {
+   if (letra.length > 1) {
       return "Dato incorrecto"
-   } else if (letra in "AEIOU aeiou") {
+   } else if (
+      letra === "a" ||
+      letra === "e" ||
+      letra === "i" ||
+      letra === "o" ||
+      letra === "u"
+   ) {
       return "Es vocal"
    } else {
       return "Dato incorrecto"
    }
-} 
+}
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
    esPositivo,
